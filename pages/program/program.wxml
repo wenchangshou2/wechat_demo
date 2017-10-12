@@ -1,0 +1,46 @@
+<view class="header">
+  <view class="header-left">
+    <label class="main-title">视渠时代</label>
+    <label class="sub-title">软件定制服务</label>
+  </view>
+  <view class="header-right">
+    <image class='logo' src="/image/logo.png" bindtap="addScreen"></image>
+  </view>
+</view>
+<view class="contactInformation">
+  <view class="contact" bindtap='showMap'>
+    <image src="/image/map.png" class="contact-icon"></image>
+    <text class="contact-content">北京朝阳区三里屯中纺里37号楼12号院</text>
+    <image src="/image/right.png" class="contact-right"></image>
+  </view>
+  <view class="contact">
+    <image src="/image/time.png" class="contact-icon"></image>
+    <text class="contact-content">10：00-21：00</text>
+  </view>
+  <view class="contact" bindtap='callPhone'>
+    <image src="/image/phone.png" class="contact-icon"></image>
+    <text class="contact-content">电话：17090084440</text>
+    <image src="/image/right.png" class="contact-right"></image>
+  </view>
+
+  <view class="contact">
+    <image src="/image/image.png" class="contact-icon"></image>
+    <text class="contact-content">门店照片</text>
+  </view>
+  <view class="imageList clearfix">
+    <view class="img" wx:for="{{imageList}}">
+      <image src="/image/{{item.url}}" mode="scaleToFill">
+      </image>
+    </view>
+  </view>
+
+</view>
+<view class='relative'>
+  <view class="bottom">
+    <navigator url="/pages/feedback/feedback" hover-class='none' open-type='redirect'>反馈问题</navigator>
+  </view>
+  <view >
+    <navigator url="/pages/animation/animation" hover-class='none' open-type='redirect'>反馈问题</navigator>
+  </view>
+  
+</view>

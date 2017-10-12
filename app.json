@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/canvasImg/canvasImg",
+    "pages/program/program",
+    "pages/tools/tools",
+    "pages/feedback/feedback",
+    "pages/animation/animation"
+
+  ],
+  "window": {
+    "navigationBarTitleText": "首页"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

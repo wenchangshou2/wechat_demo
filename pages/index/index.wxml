@@ -1,0 +1,36 @@
+<scroll-view class="scroll-view_H " scroll-y="true" bindscroll="scroll">
+  <view class="contact">
+    <view class="content" wx:for="{{screensArray}}" wx::for-item='item'>
+      <image src='/image/recommend.png' class='recommend' wx:if="{{item.isTop}}"></image>
+      <view class='play'>
+        <image src='/image/play.png' style='width:32px;height:32px;'></image>
+      </view>
+      <view class="content-canvas">
+      </view>
+      <view class='content-bottom'>
+        <image class="content-avatar" src="{{item.avatarUrl}}" style='width:24px;height:24px' />
+        <view class="content-like">
+          <image src='{{item.favorite?"/image/nxh.png":"/image/xh.png"}}' style='width:12px;height:12px;'></image>
+          <label>{{item.favorite}}</label>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</scroll-view>
+<view class="bottom">
+  <view class='bottom-index'>
+    画廊
+  </view>
+  <view class="bottom-circle">
+    <navigator url="/pages/canvasImg/canvasImg" open-type='redirect' hover-class='none'>
+      <view class="bottom-edit-button">
+
+      </view>
+    </navigator>
+  </view>
+  <view class='bottom-me'>
+    我的
+  </view>
+</view>

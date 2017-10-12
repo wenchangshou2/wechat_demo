@@ -1,0 +1,31 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='contact'>
+  <label>请选择要反馈的问题</label>
+  <view class='content'>
+    <view class="zt">
+      <text>地点不存在</text>
+      <image src="/image/right.png" class="contact-right"></image>
+    </view>
+    <view class="zt">
+      <text>地点不存在</text>
+      <image src="/image/right.png" class="contact-right"></image>
+    </view>
+    <view class="zt">
+      <text>地点不存在</text>
+      <image src="/image/right.png" class="contact-right"></image>
+    </view>
+  </view>
+</view>
+<view>
+<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+
+二维码：<label>{{code}}</label>
+名字:<label>{{name}}</label>
+性别：<label>{{xb}}</label>
+城市:<label>{{city}}</label>
+<button bindtap='scanCode'>扫描 </button>
+<button bindtap='login'>登录</button>
+<button bindtap='getPhone'>获取手机号</button>
+<button bindtap='showToast'>显示toast</button>
+<button bindtap='show'>动画</button>
+</view>

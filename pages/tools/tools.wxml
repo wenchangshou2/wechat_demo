@@ -1,0 +1,4 @@
+<!--pages/tools/tools.wxml-->
+<view>
+  <rich-text>wenchangshou</rich-text>
+</view>

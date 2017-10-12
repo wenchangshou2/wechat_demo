@@ -1,0 +1,43 @@
+<scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+
+  <image wx:for="{{imageArray}}" wx:for-item="item" class=" scroll-view-item_H" data-index="{{index}}" bindtap='changeScreen' src="{{item.path}}" bindlongpress="longpress" ></image>
+
+  <image class="scroll-view-item_H" src="/image/add.svg" bindtap="onAddScreen"></image>
+  <!-- <view class="scroll-view-item_H" scroll-x="true">
+    <view style='height:70px;width=100%;background:red;'>
+    </view>
+     <view style='height:70px;width=100%;background:blue;'>
+    </view> -->
+  <!-- <image wx:for="{{imageArray}}" wx:for-item="item" class="Screenshot" data-index="{{index}}" bindtap='changeScreen' src="{{item.path}}" bindlongpress="longpress"></image>
+    <image class="Screenshot" src="/image/add.svg" bindtap="addScreen"></image> -->
+  <!-- </view> -->
+
+</scroll-view>
+<view class="content">
+
+  <canvas canvas-id="myCanvas" id="myCanvas" bindtouchend="canvasImage" class="myCanvas" bindtouchmove="move" bindtouchstart="move"></canvas>
+  <view class="model">
+    <view class="model_contact">
+      <image class="canvaModel" src="/image/canvas.svg" bindtap="switchCanvasModel" />
+    </view>
+    <view class="model_contact">
+      <image class="canvaModel" src="/image/eraser.svg" model="clear" bindtap="switchClearModel" />
+    </view>
+    <view class="model_contact">
+      <image class="canvaModel" src="/image/colorSelect.svg" model="clear" bindtap="switchClearModel" />
+    </view>
+  </view>
+</view>
+<view class="speed">
+  <view class="speed-content" bindtap='changeSpeed'>播放速度:{{speed}}</view>
+</view>
+<view class="frame">
+  <view class="frame-content">
+    第 {{currScreenIndex+1}}/{{count+1}}帧
+  </view>
+</view>
+<view class="bottom">
+  <button bindtap='Preview'>预览</button>
+  <button bindtap='saveScreen'>保存</button>
+
+</view>

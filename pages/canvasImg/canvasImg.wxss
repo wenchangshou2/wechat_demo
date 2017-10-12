@@ -1,0 +1,70 @@
+.myCanvas{
+  width:100%;
+  height:340px;
+  margin: 0 auto;
+ 
+}
+
+.Selected{
+  border: 2px solid red;
+}
+.scroll-view_H{
+  height:70px;
+  width:100%;
+white-space: nowrap;
+
+}
+.upload_Item{ width: 70px; height: 70px; flex: 1;} 
+.scroll-view-item_H{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: lightgreen;
+}
+.content{
+  width:100%;
+  height:370px;
+   background: #9A32CD;
+   margin-top: 10px;
+   border-radius: 10px;
+}
+
+.model_contact{
+  background: red;
+}
+
+.canvaModel{
+  width:33%;
+   float:left;
+  height:32px;
+}
+.Screenshot{
+  /* width:70px;
+  height:70px;
+  float:left;
+  background: blanchedalmond; */
+}
+.bottom{
+  width:100%;
+  position: fixed;
+  bottom:10px;
+  margin-left:50%;
+  left: -70px;
+  
+}
+.bottom button{
+  width:70px;
+  float:left;
+  margin-right: 20px;
+}
+.frame{
+  clear: left;
+  width:100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.speed{
+   clear: left;
+  width:100%;
+  text-align: right;
+}

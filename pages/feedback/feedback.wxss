@@ -1,0 +1,33 @@
+/* pages/feedback/feedback.wxss */
+.content{
+  height:300px;
+  background: white;
+}
+.contact{
+  background: #f0f0f0;
+  height:100%;
+}
+.contact-right{
+  position: absolute;
+  font-size: 12px;
+  width:12px;
+  height:12px;
+  color:#d9d9d9;
+  top: 50%;
+  right:20px;
+  margin-top: -6px;
+}
+.zt{
+  border-bottom: 1px solid #f0f0f0;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin:0 auto;
+
+}
+.zt text{
+  position: absolute;
+  font-size: 14px;
+  top:50%;
+  margin-top: -7px;
+}
